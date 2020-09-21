@@ -31,5 +31,54 @@ fn main() {
     let integer = Point { x: 1, y: 2 };
 
     println!("{:?}", integer);
+
+    let points = Points { x: 1, y: 2 };
+    println!("{}", points.get_x());
+    println!("{}", points.get_y());
+
+    let p1 = Points2 { x: 5, y: 1.1 };
+    let p2 = Points2 { x: "hello", y: 'C' };
+    let p3 = p1.create_point(p2);
+    println!("p3.X = {}, p3.y = {}", p3.x, p3.y);
     println!("Hello, world!");
+}
+
+#[derive(Debug)]
+enum Option<T> {
+    Some(T),
+    None,
+}
+
+#[derive(Debug)]
+enum Result<T, E> {
+    Ok(T),
+    Err(E),
+}
+
+struct Points<T> {
+    x: T,
+    y: T,
+}
+
+impl<T> Points<T> {
+    fn get_x(&self) -> &T {
+        &self.x
+    }
+    fn get_y(&self) -> &T {
+        &self.y
+    }
+}
+
+struct Points2<T, U> {
+    x: T,
+    y: U,
+}
+
+impl<T, U> Points2<T, U> {
+    fn create_point<V, W>(self, other: Points2<V, W>) -> Points2<T, W> {
+        Points2 {
+            x: self.x,
+            y: other.y,
+        }
+    }
 }
