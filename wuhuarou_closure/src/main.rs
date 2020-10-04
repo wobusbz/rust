@@ -9,10 +9,15 @@ fn main() {
     let add_one_v2 = |x: u32| -> u32 { x + 1 };
     let add_one_v3 = |x| x + 1;
     let add_one_v4 = |x| x + 1;
-    println!("{}",add_one_v1(1));
-    println!("{}",add_one_v2(2));
-    println!("{}",add_one_v3(3));
-    println!("{}",add_one_v4(4));
+    println!("{}", add_one_v1(1));
+    println!("{}", add_one_v2(2));
+    println!("{}", add_one_v3(3));
+    println!("{}", add_one_v4(4));
+
+    let i = 1;
+    let exe = |x| x + 1;
+    let r3 = exe(5);
+    println!("{}", r3);
 }
 
 fn add_one_v1(x: u32) -> u32 {
