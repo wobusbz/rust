@@ -16,6 +16,7 @@ fn main() {
         handlers.push(handle);
     }
 
+
     for handler in handlers {
         handler.join().unwrap();
     }

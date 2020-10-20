@@ -5,7 +5,6 @@ fn main() {
     let handle = thread::spawn(move || {
         println!("{:?}", v);
     });
-    drop(v);
-    handle::join().unwrap();
+    handle.join().unwrap();
 }
 
