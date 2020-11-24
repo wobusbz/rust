@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demo01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/learn_ver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/learn_ver copy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wuahuarou_vector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wuhaurou_cite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wuhaurou_type" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wuhuarou_enum" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wuhuarou_func" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wuhuarou_if" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wuhuarou_str" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wuhuarou_stu" vcs="Git" />
+  </component>
+</project>
