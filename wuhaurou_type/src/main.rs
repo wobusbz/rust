@@ -6,7 +6,6 @@ fn main() {
 
    let is_true = false;
    println!("{}", is_true);
-
    // char
    let b = '你';
    println!("{}", b);

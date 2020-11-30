@@ -4,7 +4,7 @@ fn main() {
     let mut string_hash_map: HashMap<String, i32> = HashMap::new();
     string_hash_map.insert(String::from("hello world"), 1000);
     println!("{:?}", string_hash_map);
-
+        
     let keys = vec![String::from("hello"), String::from("world")];
     let values = vec![1, 2];
     let scores: HashMap<_, _> = keys.iter().zip(values.iter()).collect();

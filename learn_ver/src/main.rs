@@ -19,5 +19,5 @@ fn main() {
     ss = 55;
     println!("{}",ss);
     let wuhaurou: u64 = 555;
-    println!("{}",wuhaurou)
+    println!("{}",wuhaurou);
 }
