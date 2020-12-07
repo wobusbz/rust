@@ -39,4 +39,6 @@ fn main() {
     *leaf1.parent.borrow_mut() = Rc::downgrade(&branch1);
     println!("branch1 strong = {}, weak = {}", Rc::strong_count(&branch1), Rc::weak_count(&branch1));
     println!("Hello, world!");
+    println!("{}", "hello world");
+    
 }

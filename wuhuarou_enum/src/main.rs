@@ -10,6 +10,12 @@ struct IpAddr {
     address: String,
 }
 
+#[derive(Debug)]
+enum IpAddrs{
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+
 fn main() {
     let i1 = IpAddr {
         kind: IpAddKind::V4(String::from("ipv4")),
@@ -28,4 +34,8 @@ fn main() {
     let i3: i32 = 22;
     let sum: Option<i32> = None;
     println!("sum = {:?}, i3 = {}", sum, i3);
+    let x : fn (u8, u8, u8, u8) ->IpAddrs = IpAddrs::V4;
+    let y : fn(String) -> IpAddrs = IpAddrs::V6;
+    let home = IpAddrs::V4(127,0,0,1);
+    println!("{:?},{:?},{:?}",x,y, home);
 }
